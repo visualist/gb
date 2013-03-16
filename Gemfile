@@ -8,6 +8,7 @@ gem 'rails', '3.2.12'
 gem 'mysql2' # for development (I find it easier -ws)
 #gem 'sqlite3' # use again later
 
+gem 'kaminari'
 
 # Gems used only for assets and not required
 # in production environments by default.
