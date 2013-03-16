@@ -1,11 +1,11 @@
 class GuestBookController < ApplicationController
   def index
     # FIXME: .order is not available w/Post.all, use workaround for the moment
-    @posts = Post.where('1=1').order(:updated_at).reverse_order
+    @posts = Post.where('1=1').order(:updated_at).reverse_order.page params[:page]
   end
 
   def byguest
-    @posts = Post.byusername(params[:username])
+    @posts = Post.byusername(params[:username]).page params[:page]
   end
 
   def submit

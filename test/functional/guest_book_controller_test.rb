@@ -10,7 +10,14 @@ class GuestBookControllerTest < ActionController::TestCase
     send_params = {"username" => "lev"}
     get :byguest, send_params
     assert_response :success
-    p assigns(:posts)
+    posts = assigns(:posts)
+    assert_equal 1, posts.size, "lev should have 1"
+
+    send_params = {"username" => "wade"}
+    get :byguest, send_params
+    assert_response :success
+    posts = assigns(:posts)
+    assert_equal 3, posts.size, "wade should have 3"
   end
 
   test "should get byguest" do

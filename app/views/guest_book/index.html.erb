@@ -1,4 +1,6 @@
 <h1>Guest Book</h1>
+
+<%= paginate @posts %>
 <div id="guestbook">
 <% @posts.each do |post| %>
     <div class="post">
