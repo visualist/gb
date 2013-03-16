@@ -1,17 +1,21 @@
 # posts.yml
 
 W1:
-  guest: 'wade'
-  title: 'first post'
-  body: 'I just want to say this it is a cold day outside and I am glad to be inside in the warmth'
+  guest: wade
+  title: 'Walking post'
+  body: 'I just want to say this it is a cold day outside and I am glad to be inside in the warmth. I can always open the window if I decide to change my mind. Or maybe go outside and walk around until I get tired. Then I will run over to the coffee shop and have a hot chocolate and maybe a muffin. Better yet, there is the new place on Lake Street everybody has been talking about.'
 
 W2:
-  guest: 'wade'
-  title: 'keys'
+  guest: wade
+  title: 'Dropped Keys'
   body: 'I dropped my keys in the snow and now I cannot find them.'
 
 L1:
-  guest: 'lev'
-  title: 'software studies'
+  guest: lev
+  title: 'Software Studies'
   body: 'come to NY and study software as cultural phenomena'
 
+G1:
+  guest: glucas
+  title: 'ho hum'
+  body: "waiting for that next movie idea and it ain't comin'"

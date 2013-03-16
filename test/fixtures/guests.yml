@@ -1,28 +1,24 @@
 # guests.yml
 
 wade:
-  id: 1
   name: 'Wade Stebbings'
   location: 'Minneapolis'
   email: 'wadestebbings@gmail.com'
   username: 'wade'
 
 lev:
-  id: 2
   name: 'Lev Manovich'
   location: 'CUNY'
   email: 'lev@something.com'
   username: 'lev'
 
 jj:
-  id: 3
   name: 'James Joyce'
   location: 'Trieste'
   email: 'jj@trieste.it'
   username: 'jj'
 
 glucas:
-  id: 4
   name: 'George Lucas'
   location: 'California'
   email: 'gl4553@californiamovie.com'

@@ -1,3 +1,49 @@
-// Place all the styles related to the GuestBook controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$green: #80c080;
+$lightergreen: #a0e0a0;
+$borderbox: 1px;
+$roomabove: 4px;
+$page_leftedge: .06em;
+
+h1 {
+  margin-left: $page_leftedge;
+}
+
+.post {
+  margin: 8px .6em 0 $page_leftedge;
+  border-top: 1px dashed $lightergreen;
+}
+
+.post-author {
+  color: $green;
+}
+
+.post-date {
+  font-size: 80%;
+  color: $lightergreen;
+}
+
+.post-title {
+  padding-top: $roomabove;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.post-body {
+
+}
+
+.guest-block {
+  vertical-align: top;
+  margin: 0 0 0 0.5em;
+  display: inline-block;
+  margin-top: $borderbox + $roomabove;
+}
+
+.message-block {
+  width: 40%;
+  margin: 0 4em 24px 4em;
+  padding: 0 2em 12px 2em;
+  display: inline-block;
+}
+
