@@ -1,6 +1,9 @@
 <h1>Guest Book</h1>
-<ul>
-<% @guests.each do |guest| %>
-    <li><%= guest.name %></li>
+<div id="guestbook">
+<% @posts.each do |post| %>
+    <div class="post">
+        <div class="post-title"><%= post.title %></div>
+        <div class="post-body"><%= post.body %></div>
+    </div>
 <% end %>
-</ul>
+</div>

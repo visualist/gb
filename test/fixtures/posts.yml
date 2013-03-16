@@ -1,11 +1,17 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+# posts.yml
 
-# This model initially had no columns defined.  If you add columns to the
-# model remove the '{}' from the fixture names and add the columns immediately
-# below each fixture, per the syntax in the comments below
-#
-one: {}
-# column: value
-#
-two: {}
-#  column: value
+W1:
+  guest: 'wade'
+  title: 'first post'
+  body: 'I just want to say this it is a cold day outside and I am glad to be inside in the warmth'
+
+W2:
+  guest: 'wade'
+  title: 'keys'
+  body: 'I dropped my keys in the snow and now I cannot find them.'
+
+L1:
+  guest: 'lev'
+  title: 'software studies'
+  body: 'come to NY and study software as cultural phenomena'
+

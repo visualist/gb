@@ -6,4 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 require 'active_record/fixtures'
-ActiveRecord::Fixtures.create_fixtures("#{Rails.root}/test/fixtures", "guests")
+fixtures_location = "#{Rails.root}/test/fixtures"
+ActiveRecord::Fixtures.create_fixtures(fixtures_location, "guests")
+ActiveRecord::Fixtures.create_fixtures(fixtures_location, "posts")

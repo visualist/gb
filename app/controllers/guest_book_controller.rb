@@ -1,6 +1,6 @@
 class GuestBookController < ApplicationController
   def index
-    @guests = Guest.all
+    @posts = Post.all
   end
 
   def byguest
