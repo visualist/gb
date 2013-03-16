@@ -24,3 +24,8 @@ glucas:
   email: 'gl4553@californiamovie.com'
   username: 'glucas'
 
+shelley:
+  name: 'Mary Shelley'
+  location: 'England'
+  email: 'maryshelley@frankenstein.org'
+  username: 'shelley'

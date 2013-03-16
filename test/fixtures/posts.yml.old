@@ -1,0 +1,80 @@
+# posts.yml
+
+W1:
+  updated_at: 2013-03-16 19:30:50 UTC
+  guest: wade
+  title: 'Walking post'
+  body: 'I just want to say this it is a cold day outside and I am glad to be inside in the warmth. I can always open the window if I decide to change my mind. Or maybe go outside and walk around until I get tired. Then I will run over to the coffee shop and have a hot chocolate and maybe a muffin. Better yet, there is the new place on Lake Street everybody has been talking about.'
+
+W2:
+  updated_at: 2013-03-16 19:00:11 UTC
+  guest: wade
+  title: 'Dropped Keys'
+  body: 'I dropped my keys in the snow and now I cannot find them.'
+
+L1:
+  updated_at: 2013-03-16 18:30:05 UTC
+  guest: lev
+  title: 'Software Studies'
+  body: 'come to NY and study software as cultural phenomena'
+
+W3:
+  updated_at: 2013-03-16 11:11:11 UTC
+  guest: wade
+  title: 'Dogs'
+  body: "Hey - I just wanted to let you know how much my dogs loved your site. They just couldn't get enough of it, they barked all night long afterward. What ingredients did you use? It must of been some pretty smelly code."
+
+G1:
+  updated_at: 2013-03-16 18:00:04 UTC
+  guest: glucas
+  title: 'ho hum'
+  body: "waiting for that next movie idea and it ain't comin'"
+
+BAD:
+  updated_at: 2013-03-16 10:00:00 UTC
+  title: 'Bad'
+  body: "This post is not attributed to anybody. Is this a problem?"
+
+S1:
+  updated_at: 1822-01-31 01:00:00 UTC
+  guest: shelley
+  title: I am already
+  body:
+    I am already far north of London, and as I walk in the streets of
+    Petersburgh, I feel a cold northern breeze play upon my cheeks, which
+    braces my nerves and fills me with delight.  Do you understand this
+    feeling?  This breeze, which has travelled from the regions towards
+    which I am advancing, gives me a foretaste of those icy climes.
+    Inspirited by this wind of promise, my daydreams become more fervent
+    and vivid.  I try in vain to be persuaded that the pole is the seat of
+    frost and desolation; it ever presents itself to my imagination as the
+    region of beauty and delight.  There, Margaret, the sun is forever
+
+S2:
+  updated_at: 1822-01-31 01:10:00 UTC
+  guest: shelley
+  title: These reflections 
+  body:
+    These reflections have dispelled the agitation with which I began my
+    letter, and I feel my heart glow with an enthusiasm which elevates me
+    to heaven, for nothing contributes so much to tranquillize the mind as
+    a steady purpose--a point on which the soul may fix its intellectual
+    eye.  This expedition has been the favourite dream of my early years. I
+    have read with ardour the accounts of the various voyages which have
+    been made in the prospect of arriving at the North Pacific Ocean
+    through the seas which surround the pole.  You may remember that a
+
+S3:
+  updated_at: 1822-01-31 01:20:00 UTC
+  guest: shelley
+  title: These visions
+  body:
+    These visions faded when I perused, for the first time, those poets
+    whose effusions entranced my soul and lifted it to heaven.  I also
+    became a poet and for one year lived in a paradise of my own creation;
+    I imagined that I also might obtain a niche in the temple where the
+    names of Homer and Shakespeare are consecrated.  You are well
+    acquainted with my failure and how heavily I bore the disappointment.
+    But just at that time I inherited the fortune of my cousin, and my
+    thoughts were turned into the channel of their earlier bent.
+
