@@ -1,3 +1,4 @@
 <h1>Guest Book for <%= @user.name %></h1>
 
+<%= link_to 'all', { :action => 'index' } %>
 <%= render :partial => "posts", :locals => { :posts => @posts } %>

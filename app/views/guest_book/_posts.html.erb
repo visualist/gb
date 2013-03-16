@@ -3,7 +3,7 @@
 <% @posts.each do |post| %>
     <div class="post">
       <div class="guest-block">
-        <div class="post-author"><%= post.author %></div>
+        <div class="post-author"><%= link_to post.author, { :action => 'byguest', :username => post.username } %></div>
         <div class="post-date"><%= post.updated_at %></div>
       </div>
       <div class="message-block">
