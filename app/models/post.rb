@@ -5,4 +5,8 @@ class Post < ActiveRecord::Base
   def author
     guest.nil? ? 'unknown' : guest.name
   end
+
+  def self.byusername(username)
+    joins(:guest).where('guests.username' => username)
+  end
 end

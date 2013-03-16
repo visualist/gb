@@ -6,6 +6,13 @@ class GuestBookControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test "byguest should narrow results" do
+    send_params = {"username" => "lev"}
+    get :byguest, send_params
+    assert_response :success
+    p assigns(:posts)
+  end
+
   test "should get byguest" do
     get :byguest
     assert_response :success
