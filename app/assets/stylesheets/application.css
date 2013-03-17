@@ -11,3 +11,22 @@
  *= require_self
  *= require_tree .
  */
+
+#topnav {
+  position: relative;
+  padding: 6px .8em 18px .4em;
+}
+
+#topnav-logo, #topnav-guest {
+  display: inline-block;
+}
+
+#topnav a {
+  text-decoration: none;
+}
+#topnav a:hover {
+  color: red;
+}
+
+.left { float: left; }
+.right { float: right; }

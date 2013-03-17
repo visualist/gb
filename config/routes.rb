@@ -5,7 +5,7 @@ Gb::Application.routes.draw do
   get "guest_book/submit"
 
   resources :guests
-  resources :guest_session
+  resource :guest_session
 
   match "guest/register" => "guests#new"
 

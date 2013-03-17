@@ -29,7 +29,7 @@ class GuestsController < ApplicationController
     if @guest.save
       flash[:notice] = "Guest registered!"
       #redirect_to :controller => "guest_book", :action => "index"
-      redirect_back_or_default guest_url
+      redirect_back_or_default guest_book_index_url
     else
       render :action => :new
     end

@@ -7,16 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <span id="topnav-logo">
+<div id="topnav">
+  <span id="topnav-logo" class="left">
     <%= link_to "Guestbook", :controller=>"guest_book", :action=>"index" %>
   </span>
-  <span id="topnav-guest">
+  <span id="topnav-guest" class="right">
     <% if !current_guest.nil? %>
-      <%= link_to current_guest.username, {:controller => 'guests', :action => 'show', :id => current_guest.id} %> <span class="email">(<%= current_guest.email %>)</span>
+      <%= link_to current_guest.username, {:controller => 'guests', :action => 'show', :id => current_guest.id} %> <span class="email">(<%= current_guest.email %>)</span> |
+      <%= link_to "Logout", logout_url %>
     <% else %>
-      <%= link_to_unless_current "Register", new_guest_path %>
+      <%= link_to_unless_current "Register", new_guest_path %> |
+      <%= link_to "Login", login_url %>
     <% end %>
   </span>
+</div>
 
 <%= yield %>
 

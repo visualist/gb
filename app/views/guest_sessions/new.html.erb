@@ -1,10 +1,9 @@
-<h1>Login</h1>
 
-<% form_for @guest_session, :url => guest_session_path do |f| %>
-  <%= render "shared/error_messages", :target => @guest %>
+<%= form_for @guest_session, :url => guest_session_path do |f| %>
+  <%= render "shared/error_messages", :target => @guest_session %>
 
-  <%= f.label :login %><br />
-  <%= f.text_field :login %><br />
+  <%= f.label :username %><br />
+  <%= f.text_field :username %><br />
   <br />
   <%= f.label :password %><br />
   <%= f.password_field :password %><br />
