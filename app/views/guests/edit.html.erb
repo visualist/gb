@@ -1,10 +1,61 @@
-<h1>Edit Guest</h1>
 
-<% form_for @guest, :url => guest_path do |f| %>
-  <%= render "shared/error_messages", :target => @guest %>
+<p><%= notice %></p>
 
-  <%= render :partial => "form", :object => f %>
-  <%= f.submit "Update" %>
-<% end %>
+<div id="edit-guest">
 
-<br /><%= link_to "My Profile", guest_path %>
+  <%= form_for @guest, :url => guest_path do |f| %>
+    <div class="field header">Editing guest profile</div>
+
+
+    <div class="field">
+      <span class="field-label"><%= f.label :username %></span>
+      <span class="field-value"><%= f.text_field :username %></span>
+    </div>
+    <div class="field">
+      <span class="field-label"><%= f.label :name %></span>
+      <span class="field-value"><%= f.text_field :name %></span>
+    </div>
+    <div class="field">
+      <span class="field-label"><%= f.label :location %></span>
+      <span class="field-value"><%= f.text_field :location %></span>
+    </div>
+    <div class="field">
+      <span class="field-label"><%= f.label :email %></span>
+      <span class="field-value"><%= f.text_field :email %></span>
+    </div>
+
+    <div class="field">
+      <span class="field-label"><%= f.label :password %></span>
+      <span class="field-value"><%= f.password_field :password %></span>
+    </div>
+
+    <div class="field">
+      <span class="field-label"><%= f.label :password_confirmation, 'Confirmation' %></span>
+      <span class="field-value"><%= f.password_field :password_confirmation %></span>
+    </div>
+
+
+    <div class="actions">
+      <span class="field-label">&nbsp;</span>
+      <span class="field-value"><%= f.submit "Update" %></span>
+    </div>
+  <% end %>
+</div>
+
+<!--
+  <div class="tool-button"><%= link_to 'Done', guest_path(@guest) %></div>
+-->
+
+<!-- ---- -->
+
+
+<!--
+
+  <div class="field"><span class="field-name">Username:</span><span class="field-value"><%=h @guest.username %></span></div>
+  <div class="field"><span class="field-name">Name:</span><span class="field-value"><%=h @guest.name %></span></div>
+  <div class="field"><span class="field-name">Email:</span><span class="field-value"><%=h @guest.email %></span></div>
+  <div class="field"><span class="field-name">Location:</span><span class="field-value"><%=h @guest.location %></span></div>
+
+-->
+
+

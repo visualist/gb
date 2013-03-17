@@ -1,3 +1,51 @@
-// Place all the styles related to the Guest controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$blue: #4060a0;
+$lighterblue: #6080d0;
+
+#show-guest, #edit-guest {
+  margin-left: 2em;
+  //margin-bottom: 20px;
+  color: $blue;
+}
+
+.field_with_errors {
+  display: inline-block;
+}
+.field_with_errors input {
+  background-color: red;
+}
+
+.tool-button {
+  margin-top: 20px;
+}
+
+.field {
+  line-height: 26px;
+}
+
+.header {
+  text-decoration: underline;
+}
+
+.field-label {
+  font-weight: 700;
+  width: 7em;
+  display: inline-block;
+}
+
+.field-value {
+  color: $lighterblue;
+}
+
+
+// TODO: make this more generic treatment, move to application-level
+$link_color: #606060;
+$linkhover_color: #c04040;
+.tool-button a {
+  text-decoration: none;
+  color: $link_color;
+}
+.tool-button a:hover {
+  color: $linkhover_color;
+}
+

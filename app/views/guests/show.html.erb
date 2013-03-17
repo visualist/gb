@@ -1,42 +1,26 @@
-<h1>Guest</h1>
 
 <p><%= notice %></p>
 
-<p>
-  <b>Username:</b>
-  <%=h @guest.username %>
-</p>
+<div id="show-guest">
+  <div class="field header">Guest profile</div>
 
-<p>
-  <b>Name:</b>
-  <%=h @guest.name %>
-</p>
+  <div class="field">
+    <span class="field-label">Username:</span>
+    <span class="field-value"><%=h @guest.username %></span>
+  </div>
+  <div class="field">
+    <span class="field-label">Name:</span>
+    <span class="field-value"><%=h @guest.name %></span>
+  </div>
+  <div class="field">
+    <span class="field-label">Email:</span>
+    <span class="field-value"><%=h @guest.email %></span>
+  </div>
+  <div class="field">
+    <span class="field-label">Location:</span>
+    <span class="field-value"><%=h @guest.location %></span>
+  </div>
 
-<p>
-  <b>Email:</b>
-  <%=h @guest.email %>
-</p>
+  <div class="tool-button"><%= link_to 'Edit', edit_guest_path(@guest) %></div>
+</div>
 
-<p>
-  <b>Location:</b>
-  <%=h @guest.location %>
-</p>
-
-<p>
-  <b>Last login at:</b>
-  <%=h @guest.last_login_at %>
-</p>
-
-<p>
-  <b>Last login ip:</b>
-  <%=h @guest.last_login_ip %>
-</p>
-
-<p>
-  <b>Current login ip:</b>
-  <%=h @guest.current_login_ip %>
-</p>
-
-
-<%= link_to 'Edit', edit_guest_path(@guest) %> |
-<%= link_to 'Back', guest_path %>

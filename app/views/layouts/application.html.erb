@@ -12,7 +12,7 @@
   </span>
   <span id="topnav-guest">
     <% if !current_guest.nil? %>
-      <%= link_to current_guest.name, {:controller => 'guests', :action => 'edit', :id => current_guest.id}  %>
+      <%= link_to current_guest.username, {:controller => 'guests', :action => 'show', :id => current_guest.id} %> <span class="email">(<%= current_guest.email %>)</span>
     <% else %>
       <%= link_to_unless_current "Register", new_guest_path %>
     <% end %>
