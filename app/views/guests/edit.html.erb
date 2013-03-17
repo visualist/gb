@@ -1,0 +1,10 @@
+<h1>Edit Guest</h1>
+
+<% form_for @guest, :url => guest_path do |f| %>
+  <%= render "shared/error_messages", :target => @guest %>
+
+  <%= render :partial => "form", :object => f %>
+  <%= f.submit "Update" %>
+<% end %>
+
+<br /><%= link_to "My Profile", guest_path %>

@@ -20,9 +20,9 @@ class GuestBookControllerTest < ActionController::TestCase
     assert_equal 3, posts.size, "wade should have 3"
   end
 
-  test "should get byguest" do
+  test "should get 302 without username" do
     get :byguest
-    assert_response :success
+    assert_response 302
   end
 
   test "should get submit" do

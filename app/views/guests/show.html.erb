@@ -1,0 +1,42 @@
+<h1>Guest</h1>
+
+<p><%= notice %></p>
+
+<p>
+  <b>Username:</b>
+  <%=h @guest.username %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @guest.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @guest.email %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @guest.location %>
+</p>
+
+<p>
+  <b>Last login at:</b>
+  <%=h @guest.last_login_at %>
+</p>
+
+<p>
+  <b>Last login ip:</b>
+  <%=h @guest.last_login_ip %>
+</p>
+
+<p>
+  <b>Current login ip:</b>
+  <%=h @guest.current_login_ip %>
+</p>
+
+
+<%= link_to 'Edit', edit_guest_path(@guest) %> |
+<%= link_to 'Back', guest_path %>

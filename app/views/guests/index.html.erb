@@ -1,0 +1,26 @@
+<h1>Listing guests</h1>
+
+<% if !@guest.nil? %>
+  <%= render "shared/error_messages", :target => @guest %>
+<% end %>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @guests.each do |guest| %>
+  <tr>
+    <td><%= guest.email %></td>
+    <td><%= link_to 'Show', guest %></td>
+    <td><%= link_to 'Edit', edit_guest_path(guest) %></td>
+    <td><%= link_to 'Destroy', guest, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

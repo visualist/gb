@@ -9,6 +9,7 @@ class GuestBookController < ApplicationController
     return redirect_to :action=>"index" if username.nil? || username.empty?
 
     @user = Guest.find_by_username(username)
+    # TODO: flash message
     return redirect_to :action=>"index" if @user.nil?
 
     @posts = Post.byusername(params[:username]).page params[:page]
