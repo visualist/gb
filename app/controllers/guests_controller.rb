@@ -51,7 +51,7 @@ class GuestsController < ApplicationController
   def destroy
     @guest = Guest.find(params[:id])
     @guest.destroy
-    redirect_to users_url
+    redirect_to guests_url
   end
 
 end
