@@ -9,6 +9,7 @@ gem 'mysql2' # for development (I find it easier -ws)
 #gem 'sqlite3' # use again later
 
 gem 'kaminari'
+gem "authlogic", :git => "git://github.com/binarylogic/authlogic.git"
 
 # Gems used only for assets and not required
 # in production environments by default.
