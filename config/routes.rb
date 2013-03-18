@@ -2,7 +2,8 @@ Gb::Application.routes.draw do
 
   get "guest_book/index"
   get "guest_book/byguest"
-  get "guest_book/submit"
+  match "guest_book/submit" => "guest_book#submit", :via => :post
+  match "guest_book" => "guest_book#index"
 
   resources :guests
   resource :guest_session
