@@ -25,9 +25,13 @@ class GuestBookControllerTest < ActionController::TestCase
     assert_response 302
   end
 
-  test "should get submit" do
+  test "should post submit" do
     get :submit
-    assert_response :success
+    assert_response :redirect
+    all_before = Post.count
+    post :submit, {:title => "new post", :body => "this text will be inserted"}
+    all_after = Post.count
+    assert_equal all_before+1, all_after
   end
 
 end

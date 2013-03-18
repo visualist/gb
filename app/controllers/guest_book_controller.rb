@@ -16,5 +16,12 @@ class GuestBookController < ApplicationController
   end
 
   def submit
+    title = params[:title]
+    body = params[:post]
+    post = Post.new
+    post.assign_attributes({ :title => title, :body => body})
+    post.guest = current_guest
+    post.save
+    return redirect_to :action=>"index"
   end
 end

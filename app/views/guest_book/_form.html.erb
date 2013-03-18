@@ -1,0 +1,20 @@
+
+<div class="post">
+  <div class="guest-block">
+    <div class="post-author"><%= guest.name %></div>
+    <div class="post-date">(your next message)</div>
+  </div>
+
+  <%= form_tag 'submit', :id => 'message-form' do %>
+
+    <%= text_field_tag "title", "", :size => 45, :maxlength => 140 -%>
+    <span class="poor-label">(title)</span>
+    <br/>
+
+    <%= text_area_tag(:post, "", :cols => '40%', :rows => 10) -%>
+    <br/>
+
+    <%= submit_tag "Submit" %>
+
+  <% end %>
+</div>
