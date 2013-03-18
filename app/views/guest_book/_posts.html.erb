@@ -3,7 +3,14 @@
 <% @posts.each do |post| %>
     <div class="post">
       <div class="guest-block">
-        <div class="post-author"><%= link_to post.author, { :action => 'byguest', :username => post.username } %></div>
+        <div class="post-author">
+           <% author = post.author
+              if author.nil? || author == 'unknown' %>
+                unknown
+           <% else %>
+                <%= link_to author, {:action => 'byguest', :username => post.username} %>
+           <% end %>
+        </div>
         <div class="post-date"><%= post.updated_at %></div>
       </div>
       <div class="message-block">

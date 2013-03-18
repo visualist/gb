@@ -1,5 +1,3 @@
-<h1>Guest Book</h1>
-
 <% if !current_guest.nil? %>
   <%= render :partial => "form", :locals => { :guest => current_guest } %>
 <% end %>

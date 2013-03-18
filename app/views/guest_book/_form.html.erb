@@ -1,5 +1,4 @@
-
-<div class="post">
+<div class="post form">
   <div class="guest-block">
     <div class="post-author"><%= guest.name %></div>
     <div class="post-date">(your next message)</div>
@@ -7,7 +6,7 @@
 
   <%= form_tag 'submit', :id => 'message-form' do %>
 
-    <%= text_field_tag "title", "", :size => 45, :maxlength => 140 -%>
+    <%= text_field_tag "title", "", :size => 42, :maxlength => 140 -%>
     <span class="poor-label">(title)</span>
     <br/>
 

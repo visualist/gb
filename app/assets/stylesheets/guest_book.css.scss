@@ -29,10 +29,6 @@ h1 {
   padding-bottom: 8px;
 }
 
-.post-body {
-
-}
-
 .guest-block {
   width: 12em;
   vertical-align: top;
@@ -43,10 +39,12 @@ h1 {
 
 .poor-label {
   padding-left: 3px;
+  text-size: 90%;
   color: #808080;
 }
 
-#message-form {
+.post.form {
+  padding-top: 8px;
 }
 
 .message-block, #message-form {

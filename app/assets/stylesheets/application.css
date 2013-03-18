@@ -12,6 +12,17 @@
  *= require_tree .
  */
 
+h1 {
+  margin: 0 0 28px 16px;
+  line-height: 0;
+  font-size: 18pt;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
 #topnav {
   position: relative;
   padding: 6px .8em 18px .4em;
@@ -21,12 +32,39 @@
   display: inline-block;
 }
 
-#topnav a {
+a {
   text-decoration: none;
+  color: #3F8C42;
 }
-#topnav a:hover {
-  color: red;
+a:hover {
+  color: #c04040;
 }
 
 .left { float: left; }
 .right { float: right; }
+
+#container {
+  padding-top: 28px;
+}
+
+form.new_guest_session, form.new_guest, form.edit_guest, #show-guest {
+  border: 1px solid black;
+  padding: 16px;
+  background-color: #f0f0f0;
+  margin-left: 10em;
+  width: 15em;
+}
+
+#show-guest, form.edit_guest {
+  width: 22em !important;
+}
+
+#errorExplanation {
+  margin: 16px 4px;
+  padding: 6px 6px 20px 6px;
+  font-size: 80%;
+  color: red;
+  background-color: white;
+  border: 1px solid black;
+}
+

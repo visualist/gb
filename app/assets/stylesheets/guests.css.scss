@@ -3,8 +3,6 @@ $blue: #4060a0;
 $lighterblue: #6080d0;
 
 #show-guest, #edit-guest {
-  margin-left: 2em;
-  //margin-bottom: 20px;
   color: $blue;
 }
 
@@ -39,7 +37,7 @@ $lighterblue: #6080d0;
 
 
 // TODO: make this more generic treatment, move to application-level
-$link_color: #606060;
+$link_color: #3F8C42;
 $linkhover_color: #c04040;
 .tool-button a {
   text-decoration: none;

@@ -9,7 +9,7 @@
 <body>
 <div id="topnav">
   <span id="topnav-logo" class="left">
-    <%= link_to "Guestbook", :controller=>"guest_book", :action=>"index" %>
+    <%= link_to "GB Guestbook", :controller=>"guest_book", :action=>"index" %>
   </span>
   <span id="topnav-guest" class="right">
     <% if !current_guest.nil? %>
@@ -22,7 +22,9 @@
   </span>
 </div>
 
-<%= yield %>
+<div id="container">
+  <%= yield %>
+</div>
 
 </body>
 </html>
